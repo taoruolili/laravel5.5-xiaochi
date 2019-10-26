@@ -1,0 +1,11 @@
+Admin  后台所有文件
+lyouts->admin  父模板页面
+public 公共部分页面
+user   用户管理
+class   分类管理
+
+
+
+
+
+Home   前台所有文件

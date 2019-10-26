@@ -1,0 +1,628 @@
+html,body{
+	background-color: #fff;
+	font-family: 微软雅黑;
+}
+/*京东logo和搜索框*/
+#jd_logos_and_search{
+	width: 100%;
+	background-color: #fff;
+}
+#jd_logos_and_search_wrap{
+	width: 1190px;
+	height: 100px;
+	/*background-color: red;*/
+	margin:0 auto;
+}
+#jd_logos_and_search_wrap_left{
+	width: 280px;
+	height: 100%;
+	/*background-color: pink;*/
+	overflow: hidden;
+	position: relative;
+	float: left;
+}
+.logo_2014{
+	display: block;
+    width: 134px;
+    height: 42px;
+    background: url(../imgs/gwc/jdlogo-201708.png) no-repeat 0 0;
+    background-size: 134px 42px;
+    margin-top: 35px;
+}
+.logo_2014_link2{
+	overflow: hidden;
+    display: block;
+    position: absolute;
+    width: 100px;
+    height: 40px;
+    line-height: 99em;
+    top: 40px;
+    right: 38px;
+    background: #fff;
+    color: #666;
+    font-size: 30px; 
+}
+.logo_2014_link2 >b{
+	display: block;
+    position: absolute;
+    width: 100px;
+    height: 40px;
+    line-height: 99em;
+    top: 0;
+    right: 0;
+    background: url(../imgs/gwc/cart-icon.png) #fff no-repeat;
+}
+#cart_search{
+	float: right;
+    border: 2px solid #c91623;
+    background: #c91623;
+    height: 24px;
+    margin-top: 40px;
+    overflow: hidden;
+}
+.itext{
+	border: 0;
+    height: 18px;
+    line-height: 18px;
+    width: 260px;
+    padding: 3px 5px;
+    outline: 0;
+}
+.button{
+	display: inline-block;
+    vertical-align: top;
+    width: 48px;
+    height: 24px;
+    background: #c91623;
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+ 	border:0px;
+}
+
+/*全部商品、京东大药房*/
+#shangping_wrap{
+    width: 100%;
+    margin-top: 10px;
+    background-color: #fff;
+}
+#shangping{
+    width: 1190px;
+    margin:0 auto;
+}
+#shangping_tab{
+    width: 100%;
+    height: 30px;
+    background-color: #fff;
+}
+.shangping_tab_ltem{
+    line-height: 30px;
+    height: 30px;
+    font-family: 30px;
+    float: left;
+    text-align: left;
+    padding: 0 0 10px;
+    cursor: pointer;
+    margin: 0 30px 0 0;
+    position: relative;
+}
+.shangping_tab_ltem >a{
+    color: #333;
+    padding-right: 20px;
+    font-weight: bold;
+}
+.xiahuaxian{
+    position: absolute;
+    height: 2px;
+    background: #e4393c;
+    left: 60px;
+    top: 170px;
+    width: 85px;
+    overflow: hidden;
+    /*display: none;*/
+    display: block;
+}
+.shangping_tab_ltem_active >a{
+    color: #e4393c;
+}
+#arrive_address{
+    float: right; 
+    line-height: 28px;
+    background-color: #fff; 
+}
+#arrive_address >span{
+    font-size: 12px;
+    color: #666;
+    float: left;
+}
+#choose_address{
+    border:1px solid #CECBCE;
+    position: relative;
+    font-size: 12px;
+    color: #666;
+    float: left;
+}
+#choose_address > i{
+    display: block;
+    position: absolute;
+    top: 6px;
+    right: 4px;
+    width: 17px;
+    height: 17px;
+    background: url(../imgs/gwc/tu1.png) no-repeat 3px 5px;
+    overflow: hidden;
+}
+#choose_place{
+    margin-right: 22px;
+}
+#shangpinfenlei{
+    width: 100%;
+    height: 40px;
+    background-color: #f7f7f7;
+    border: 1px solid #E0E0E0;
+    margin-top: 2px;
+    margin-bottom: 10px;
+}
+.column{
+    float: left;
+    font-size: 12px;
+    color: #666;
+    line-height: 40px;
+}
+.t_checkbox{
+    height: 18px;
+    line-height: 26px;
+    padding-top: 7px;
+    width: 122px;
+    padding-left: 11px;
+    margin-left: -240px;
+}
+.t_checkbox .jdcheckbox{
+    vertical-align: middle;
+    margin: 0 3px 0 0;
+}
+.t_goods{
+      width: 208px;
+}
+.t_props{
+    width: 60px;
+    height: 32px;
+    padding: 0 10px 0 20px;
+}
+.t_price{
+    width: 120px;
+    padding-right: 40px;
+    text-align: right;
+}
+.t_quantity{
+    width: 120px;
+    text-align: center;
+}
+.t_sum{
+    width: 105px;
+    padding-right: 40px;
+    text-align: right;
+}
+.t_action{
+    width: 75px;
+    margin-left: 20px;
+}
+.cart_item_list{
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+.cart_tbody .shop{
+    height: 30px;
+    line-height: 30px;
+    padding-left: 11px;
+    font-weight: 700;
+    border-bottom: 2px solid #AAA;
+}
+.cart_tbody .shop .cart_checkbox{
+    float: left;
+    position: relative;
+    z-index: 5;
+    vertical-align: middle;
+    margin: 11px 10px 0 0;
+}
+.shop_txt{
+    float: left;
+    width: 45%;
+}
+.shop_txt .shop_name{
+    display: inline-block;
+    max-width: 260px;
+    overflow: hidden;
+    vertical-align: middle;
+    height: 30px;
+    line-height: 30px;
+    color: #666;
+    font-size: 12px;
+}
+.shop_txt .shop_name:hover{
+    color:  #e4393c;
+}
+.shop_txt .shop_btn_img{
+    display: inline-block;
+    vertical-align: middle;
+    background: url(../imgs/gwc/tu2.png) -84px -49px;
+    width: 16px;
+    height: 16px;
+    line-height: 100px;
+    overflow: hidden;
+    margin: 0 0 0 5px;
+    font-size: 12px;
+}
+.shop .shop_youhuijuan{
+    float: left;
+    width: 80px;
+    height: 24px;
+    overflow: hidden;
+    margin-left: 1px;
+}
+.shop .shop_youhuijuan .shop_youhuijuan_btn{
+    display: block;
+    width: 80px;
+    height: 24px;
+    background: url(../imgs/gwc/tu3.png) 0 0 no-repeat;
+    overflow: hidden;
+}
+.shop_items_list{
+    width: 100%;
+    background-color: #fff;
+}
+.shop_items_list .item_header{
+    background: #fff;
+    height: 26px;
+    border-bottom: 1px solid #f1f1f1;
+}
+.shop_items_list .item_header .item_header_a{
+    color: #666;
+    font-size: 12px;
+}
+.shop_items_list .item_header .item_header_a:hover{
+    color: #e4393c;
+}
+.shop_items_list .item_header .item_header_a span{
+    background: #fff;
+    color: #f48719;
+    border: 1px solid #f48719;
+    position: relative;
+    display: inline-block;
+    padding: 1px 10px;
+    height: 16px;
+    line-height: 16px;
+    margin: 0 10px 0 15px;
+}
+.shop_items_list .item_header .item_header_a span i{
+    display: block;
+    position: absolute;
+    width: 5px;
+    height: 6px;
+    left: -1px;
+    border: 0;
+    bottom: -5px;
+    background: url(../imgs/gwc/cart-line-02.png) 0 -7px no-repeat;
+    overflow: hidden;
+}
+.shop_items_list .item_header .item_header_btna{
+      background-color: #e74649;
+      display: inline-block;
+      height: 19px;
+      line-height: 19px;
+      padding: 0 7px;
+      border-radius: 2px;
+      font-size: 12px;
+      color: #fff;
+      margin-left: 20px;
+}
+.shop_items_list .item_header .item_header_coudana{
+    font-size: 12px;
+    color: #333;
+}
+.shop_goods_content{
+    width: 100%;
+    margin-top: 20px;
+    height: auto;
+}
+.shop_goods_content_wrap_all{
+    width: 100%;
+    height: 100px;
+}
+.shop_goods_content_checkbox{
+    float: left;
+}
+.shop_goods_content_checkbox .shop_goods_content_checkbox_choose{
+    width: 30px;
+}
+.shop_goods_content_goods{
+    float: left;
+    font-size: 12px;
+    color: #666;
+    width: 300px;
+    margin-right: 20px;
+}
+.shop_goods_content_goods .s_show_img{
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+    border: 1px solid #eee;
+    background: #fff;
+    overflow: hidden;
+    float: left;
+}
+.shop_goods_content_goods .s_show_img_after_text{
+    float: left;
+    overflow: hidden;
+    width: 200px;
+    height: 40px;
+}
+.shop_goods_content_goods .s_show_img_after_text a{
+    color: #333;
+    font-size: 12px;
+    line-height: 20px;
+}
+.shop_goods_content_goods .s_show_img_after_text a:hover{
+    color: #e4393c;
+}
+.shop_goods_content_goods .s_show_img_tuihuo{
+    width: 100%;
+}
+.shop_goods_content_goods .s_show_img_tuihuo i{
+    display: inline-block;
+    width: 17px;
+    height: 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    background: url(../imgs/gwc/tu2.png) no-repeat;
+    background-position: -54px -23px;
+}
+.shop_goods_content_goods .s_show_img_tuihuo a{
+    font-size: 12px; 
+    color: #6485cb;
+    padding: 1px 4px 0 7px;
+    height: 16px;
+    line-height: 16px;
+    vertical-align: middle;
+}
+.shop_goods_content_color{
+    width: 130px;
+    font-size: 12px;
+    color: #666;
+    float: left;
+    margin-right: 20px;
+}
+.shop_goods_content_price{
+    width: 170px;
+    padding-right: 40px;
+    font-family: verdana;
+    text-align: right;
+    float: left;
+    font-size: 12px;
+    margin-right: 20px;
+}
+.shop_goods_content_price strong{
+    display: block;
+    color: #333;
+    font-weight: 400;
+}
+.shop_goods_content_price a{
+    display: inline-block;
+    width: 28px;
+    border: 1px solid #f9d2d3;
+    color: #e4393c;
+    height: 18px;
+    text-align: left;
+    line-height: 20px;
+    padding: 0 15px 0 5px;
+    cursor: pointer;
+    background: #fff;
+    float: right;
+    overflow: hidden;
+    position: relative;
+}
+.shop_goods_content_price a i{
+    display: block;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    width: 7px;
+    height: 4px;
+    margin-left: 5px;
+    overflow: hidden;
+    background: url(../imgs/gwc/tu2.png) -82px -3px;
+}
+.shop_goods_content_quantity{
+    width: 80px;
+    font-size: 12px;
+    color: #666;
+    float: left;
+    margin-right: 20px;
+}
+.shop_goods_content_quantity_firstLine{
+    position: relative;
+    overflow: hidden;
+    height: 22px;
+    width: 80px;
+    background-color: #fff;
+}
+.add_goods_fuhao{
+    border: 1px solid #cacbcb;
+    border-right: 0;
+    height: 18px;
+    line-height: 18px;
+    padding: 1px 0;
+    width: 16px;
+    text-align: center;
+    color: #666;
+    background: #fff;
+    float: left;
+}
+.add_goods_sum{
+    float: left;
+    border: 1px solid #cacbcb;
+    border-right: 0;
+    width: 42px;
+    height: 18px;
+    line-height: 18px;
+    text-align: center;
+    padding: 1px;
+    margin: 0;
+    font-size: 12px;
+    font-family: verdana;
+    color: #333;
+}
+.add_goods_jiahao{
+    border: 1px solid #cacbcb;
+}
+.shop_goods_content_quantity_youhuo{
+    color: #aaa;
+    text-align: center;
+    width: 80px;
+}
+.shop_goods_content_sum{
+    width: 100px;
+    padding-right: 40px;
+    text-align: right;
+    font-family: verdana;
+    margin-right: 20px;
+    font-size: 12px;
+    float: left;
+}
+.shop_goods_content_sum strong {
+    font-weight: bold;
+}
+.shop_goods_content_delete{
+    width: 75px;
+    float: left;
+}
+.shop_goods_content_delete .delete_list{
+    font-size: 12px;
+    color: #666;
+    display: block;
+}
+.shop_goods_content_delete .delete_list:hover{
+    color: #e4393c;
+}
+#settlement_wrap{
+    width: 100%;
+    margin-top: 20px;
+    height: 50px;
+    background-color: #fff;
+}
+#settlement{
+    width: 1190px;
+    height: 50px;
+    background-color: #f7f7f7;
+    /*margin:0 auto;*/
+    border:1px solid #f1f1f1;
+    /*position: fixed;
+    bottom: 0;
+    left: 50%;
+    margin-left: -595px;*/
+}
+#settlement_select_all{
+    float: left;
+    height: 18px;
+    line-height: 18px;
+    padding: 16px 0 16px 9px;
+    white-space: nowrap;
+    font-size: 12px;
+    color: #666;
+}
+.settlement_select_all_choose{
+    margin-right: 10px;
+    vertical-align: middle;
+    margin-top: -3px;
+}
+#settlement_moddleDiv{
+    float: left;
+    height: 50px;
+    width: 310px;
+    line-height: 50px;
+}
+.settlement_moddleDiv_a{
+    float: left;
+    margin-left: 10px;
+    color: #666;
+    font-size: 12px;
+}
+.settlement_moddleDiv_a_change{
+    font-weight: bold;
+}
+.settlement_moddleDiv_a:hover{
+    color: #e4393c;
+}
+#settlement_rightDiv{
+    float: right;
+    height: 50px;
+    width: 450px;
+    /*background-color: red;*/
+}
+#settlement_rightDiv_sum{
+    float: left;
+    color: #999;
+    height: 44px;
+    line-height: 20px;
+    margin: 7px 0 0;
+    cursor: pointer;
+    font-size: 12px;
+}
+#settlement_rightDiv_sum b{
+    color: #e4393c;
+    font-weight: bold;
+    font-size: 14px;
+    margin:0 3px;
+}
+#settlement_rightDiv_price_sum{
+    float: left;
+    height: 43px;
+    line-height: 20px;
+    margin: 7px 20px 0 10px;
+    color: #666;
+    width: auto;
+    position: relative;
+}
+#settlement_rightDiv_price_sum_firstLine{
+    font-size: 12px;
+    color: #666;
+}
+.price_sum_firstLine_text{
+    display: inline-block;
+    width: 50px;
+    text-align: right;
+    color: #999;
+}
+.price_sum_firstLine_jiner{
+    font-weight:bold;
+    font-size: 16px;
+    color: #e4393c;
+}
+#settlement_rightDiv_price_sum_firstLine >i{
+    vertical-align: text-bottom;
+    display: inline-block;
+    height: 18px;
+    width: 12px;
+    background: url(../imgs/gwc/price-tips.png) 0 0 no-repeat;
+    margin-left: 10px;
+}
+.price_sum_firstLine_jieshengjiner{
+    display: inline-block;
+    text-align: right;
+    font-family: verdana;
+}
+#go_jiesuan_btn{
+    float: left;
+}
+.go_jiesuan_btn_a{
+    display: block;
+    position: relative;
+    width: 96px;
+    height: 50px;
+    line-height: 52px;
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    background: #e54346;
+    overflow: hidden;
+}
